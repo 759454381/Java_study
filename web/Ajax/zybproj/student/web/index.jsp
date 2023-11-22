@@ -8,13 +8,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
-    <script type="text/javascript" src="js/jquery-3.7.1.js"></script>
+    <title>index.jsp</title>
+<%--    <script type="text/javascript" src="js/jquery-3.7.1.js"></script>--%>
     <script>
-      $(function (){
+     /* $(function (){
         $("a").click(function (){
-          $.ajax({
+          /!*$.ajax({
             url:'show',
+            // data:{"name":"张三"},
             data:{"name":"张三"},
             dataType:"html",
             error:function (){
@@ -23,17 +24,36 @@
             success:function (data){
               alert('请求成功'+data);
             },
-            type:"POST"
+            type:"POST"*!/
+
+          $.port("demo",{"name":"张三"},function (data){
+            alert(data.id+" "+data.username +" "+data.password);
           });
           return false;
         })
-      });
-
+      });*/
     </script>
   </head>
   <body>
   <div>
-      <a href="show">跳转</a>
+      <hr>
+      <h2>查询所有--并有操作功能---更改/删除</h2>
+<%--    这两个用的同一个StudentServlet.java--%>
+    <a href="jqueryAjax.jsp">查询全部--jqueryAjax </a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="jsp/jsAjax.jsp"> 查询全部--jsAjax</a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <a href="jsp/loginQuery.jsp"> 登陆--查询</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="jsp/registerQuery.jsp"> 注册--查询</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="jsp/deleteQuery.jsp"> 删除--查询</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="jsp/updateQuery.jsp"> 修改信息--查询</a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <br />
+      <br />
+      <br />
+      <br />
+
+    <a href="jsp/selectAndOperate.jsp"> 先查询全部--然后遍历表格-每一行都有 更改和删除的按钮</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="jsp/jsAdminOperate.jsp"> 管理员操作</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<%--      <a href="show">跳转</a>--%>
 <%--    <a href="images/a.png">跳转</a>--%>
   </div>
   </body>

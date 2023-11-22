@@ -19,6 +19,17 @@ public class Student {
         this.age = age;
         this.gender = gender;
     }
+    public Student( String name, String pwd, int age, String gender) {
+        this.name = name;
+        this.pwd = pwd;
+        this.age = age;
+        this.gender = gender;
+    }
+
+    public Student( int id,String name) {
+        this.id = id;
+        this.name = name;
+    }
 
     @Override
     public boolean equals(Object o) {

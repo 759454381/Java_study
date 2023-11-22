@@ -10,16 +10,9 @@
 <html>
 <head>
     <title>查询所有学生信息</title>
-<%--    <script type="text/javascript" src="js/jquery-3.7.1.js">--%>
-<%--        $("sel").onclick=function (){--%>
-<%--          $()--%>
-<%--        }--%>
-<%--    </script>--%>
-    <script type="text/javascript">
-        var selBtn = document.getElementsByName("sel");
-        selBtn.onclike=function (){
+    <script  type="text/javascript" src="/js/jquery-3.7.1.js"></script>
+    <script>
 
-        }
     </script>
 </head>
 <body>
@@ -27,14 +20,8 @@
         <input name="sel" type="button" value="查询" onclick="clickSelAll()" />
         <table border="1" cellspacing="1">
             <tr>
-                <th>编号</th>
-                <th>姓名</th>
-                <th>密码</th>
-                <th>年龄</th>
-                <th>性别</th>
+
             </tr>
-
-
         </table>
     </div>
 </body>

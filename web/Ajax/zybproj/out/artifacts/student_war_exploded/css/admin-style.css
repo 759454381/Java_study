@@ -1,0 +1,68 @@
+
+#myDiv{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+table{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse:collapse;
+}
+th td{
+    padding: 8px;
+}
+
+th {
+    height: 50px;
+    background-color: rgb(6, 237, 226);
+}
+td{
+    height: 40px;
+    background-color: rgb(252, 252, 252);
+    text-align: left;
+}
+
+ 
+button{
+    width: 80px;
+    height: 30px;
+    background-color: rgb(209, 14, 14);
+    font-size:16px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.edit-btn{
+    background-color: rgb(7, 218, 70);
+}
+
+.delete-btn{
+    background-color: rgb(235, 8, 8);
+}
+
+.delete-btn, .edit-btn {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+  }
+
+  .editable {
+    padding: 10px;
+    display: inline-block;
+    /* display: block; */
+  }
+
+
+  .ing .editable {
+    /* border: 1px solid black; */
+    border: 0px;
+    background: #65e00f;
+  }
+
+#idVal{
+    background: #ee0909;
+}

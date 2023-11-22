@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ssmBase/ssmBase.iml" filepath="$PROJECT_DIR$/ssmBase/ssmBase.iml" />
       <module fileurl="file://$PROJECT_DIR$/student/student.iml" filepath="$PROJECT_DIR$/student/student.iml" />
+      <module fileurl="file://$PROJECT_DIR$/student02/student02.iml" filepath="$PROJECT_DIR$/student02/student02.iml" />
       <module fileurl="file://$PROJECT_DIR$/zybproj.iml" filepath="$PROJECT_DIR$/zybproj.iml" />
     </modules>
   </component>
